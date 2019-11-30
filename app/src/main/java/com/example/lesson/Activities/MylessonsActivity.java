@@ -43,7 +43,7 @@ public class MylessonsActivity extends AppCompatActivity implements View.OnClick
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //用position跳转详情页面
-                Intent intent = new Intent(MylessonsActivity.this,TestActivity.class);
+                Intent intent = new Intent(MylessonsActivity.this,LessonMainActivity.class);
                 startActivity(intent);
             }
         });
