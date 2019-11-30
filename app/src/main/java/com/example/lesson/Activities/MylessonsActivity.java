@@ -28,9 +28,9 @@ public class MylessonsActivity extends AppCompatActivity implements View.OnClick
 
 
     @Override
-        protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mylessons);
+        setContentView(R.layout.my_lessons_layout);
 
         bindViews();
 
@@ -62,7 +62,7 @@ public class MylessonsActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.les_myself:
-                Intent intent7 = new Intent(MylessonsActivity.this, MainActivity.class);    //跳转设置
+                Intent intent7 = new Intent(MylessonsActivity.this, MainStuActivity.class);    //跳转设置
                 startActivity(intent7);
                 break;
             case R.id.les_mylessons:

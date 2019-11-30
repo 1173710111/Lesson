@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ActivitiesActivity extends AppCompatActivity implements View.OnClickListener {
+public class MyActivitiesActivity extends AppCompatActivity implements View.OnClickListener {
     private List<Lesson> lessons=new ArrayList<Lesson>();
 
     private void createLessons(){
@@ -43,7 +43,7 @@ public class ActivitiesActivity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activities_layout);
+        setContentView(R.layout.my_activities_layout);
         createLessons();
         Button allButton=findViewById(R.id.allActivities);
         allButton.setOnClickListener(this);
@@ -54,7 +54,7 @@ public class ActivitiesActivity extends AppCompatActivity implements View.OnClic
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         RecyclerView recyclerView=findViewById(R.id.acitvities);
         recyclerView.setLayoutManager(layoutManager);
-        ActivityLessonsAdapter adapter = new ActivityLessonsAdapter(lessons,ActivitiesActivity.this);
+        ActivityLessonsAdapter adapter = new ActivityLessonsAdapter(lessons, MyActivitiesActivity.this);
         recyclerView.setAdapter(adapter);
     }
 

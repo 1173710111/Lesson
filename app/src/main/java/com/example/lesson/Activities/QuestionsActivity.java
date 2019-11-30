@@ -47,7 +47,7 @@ public class QuestionsActivity extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.questions_layout);
+        setContentView(R.layout.my_questions_layout);
         Button unfinishedButton=findViewById(R.id.unfinished);
         unfinishedButton.setOnClickListener(this);
         //replacedFragment(new QuestionsUnfinished());

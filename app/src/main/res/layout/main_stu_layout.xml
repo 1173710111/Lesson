@@ -10,26 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/bg_gray"
+        app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="0dp">
 
 
         <RelativeLayout
             android:id="@+id/ly_top_bar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
             android:background="@color/bg_topbar">
-
-            <TextView
-                android:id="@+id/txt_topbar"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="在线课堂"
-                android:textColor="@color/text_topbar"
-                android:textSize="18sp" />
 
             <View
                 android:layout_width="match_parent"
@@ -42,7 +33,7 @@
         <RelativeLayout
             android:id="@+id/self_bar"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="118dp"
             android:layout_below="@id/ly_top_bar">
             <!--android:background="@color/bg_topbar"-->
 
@@ -50,57 +41,88 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
-                android:src="@drawable/stu_1"
-                android:scaleType="fitXY">
-            </ImageView>
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/stu_1"></ImageView>
 
-            <TextView
-                android:id="@+id/stu_self"
-                android:layout_width="55dp"
-                android:layout_height="match_parent"
-                android:text="学号:"
-                android:layout_marginLeft="140dp"
-                android:gravity="center"
-                android:textColor="@color/text_topbar"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/stu_myself"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="123456"
-                android:layout_marginLeft="200dp"
-                android:textColor="@color/text_topbar"
-                android:textSize="18sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text="用户名:"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left|center_vertical"
+                        android:text="大光相牌充电宝"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text="学号:"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/stu_myself"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="123456"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
 
 
             <Button
                 android:id="@+id/stu_settings"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="320dp"
-                android:scaleType="fitXY"
-                android:background="@drawable/setting">
-            </Button>
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/setting"
+                android:scaleType="fitXY"></Button>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2px"
-                android:layout_alignParentBottom="true"
-                android:background="@color/div_white" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/center_btns"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="476dp"
             android:layout_above="@id/rg_tab_bar"
-            android:layout_marginTop="148dp">
+            android:layout_below="@+id/self_bar"
+            android:layout_marginTop="13dp">
 
             <Button
                 android:id="@+id/ce_lessons"

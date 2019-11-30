@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-    <resources>
+<resources>
     <string name="app_name">LessonSystem</string>
     <string name="tab_menu_myself">个人中心</string>
     <string name="tab_menu_mylessons">课程</string>
@@ -13,5 +13,17 @@
     <string name="center_menu_activities">活动</string>
     <string name="center_menu_mydiscussions">讨论</string>
     <string name="hh">请输入内容</string>
+    <string name="signup"><u>注册</u></string>
+    <string name="signin"><u>登录</u></string>
     <array name="spingarr">一脸懵逼,二脸懵逼</array>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
 </resources>

@@ -8,9 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.lesson.Activities.LessonActivity;
+import com.example.lesson.Activities.QuestionsOneLessonActivity;
 import com.example.lesson.Objects.Lesson;
 import com.example.lesson.Objects.SubLesson;
 import com.example.lesson.R;
@@ -37,7 +36,7 @@ public class LessonAdapter_OneSub extends RecyclerView.Adapter<LessonAdapter_One
                 int position=holder.getAdapterPosition();
                 Lesson lesson=lessonList.get(position);
                 //Toast.makeText(context, "click"+position, Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(context, LessonActivity.class);
+                Intent intent=new Intent(context, QuestionsOneLessonActivity.class);
                 intent.putExtra("lesson",lesson.getName());
                 context.startActivity(intent);
             }

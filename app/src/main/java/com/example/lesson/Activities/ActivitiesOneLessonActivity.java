@@ -7,21 +7,18 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.TextView;
 
 import com.example.lesson.Adapters.ActivityAdapter;
-import com.example.lesson.Adapters.ActivityLessonsAdapter;
 import com.example.lesson.Objects.Activity;
 import com.example.lesson.Objects.Lesson;
-import com.example.lesson.Objects.Question;
-import com.example.lesson.Objects.SubLesson;
 import com.example.lesson.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class LessonActivitiesActivity extends AppCompatActivity {
+public class ActivitiesOneLessonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.lesson_activities_layout);
+        super.setContentView(R.layout.activities_onelesson_layout);
         TextView lessonName = (TextView) super.findViewById(R.id.LessonName);
         String lesson = getIntent().getStringExtra("lesson");
         lessonName.setText(lesson);

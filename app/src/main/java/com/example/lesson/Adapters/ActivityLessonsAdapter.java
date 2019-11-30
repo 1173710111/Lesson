@@ -9,12 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.lesson.Activities.ActivitiesActivity;
 import com.example.lesson.Activities.ActivityActivity;
-import com.example.lesson.Activities.LessonActivitiesActivity;
-import com.example.lesson.Activities.LessonActivity;
+import com.example.lesson.Activities.ActivitiesOneLessonActivity;
 import com.example.lesson.Objects.Activity;
 import com.example.lesson.Objects.Lesson;
 import com.example.lesson.R;
@@ -42,7 +39,7 @@ public class ActivityLessonsAdapter extends RecyclerView.Adapter<ActivityLessons
                 int position=holder.getAdapterPosition();
                 Lesson lesson=lessonList.get(position);
                 //Toast.makeText(context, "click"+lesson.getName(), Toast.LENGTH_SHORT).show();
-                Intent intent=new Intent(context, LessonActivitiesActivity.class);
+                Intent intent=new Intent(context, ActivitiesOneLessonActivity.class);
                 intent.putExtra("lesson",lesson.getName());
                 context.startActivity(intent);
             }

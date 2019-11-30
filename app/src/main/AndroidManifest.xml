@@ -8,27 +8,35 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.TestActivity"></activity>
-        <activity android:name=".Activities.HelloWorldActivity">
+        <activity android:name=".Activities.SearchMesActivity"></activity>
+        <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.QuestionsActivity" />
-        <activity android:name=".Activities.QuestionActivity" />
-        <activity android:name=".Activities.LessonActivity" />
-        <activity android:name=".Activities.ActivitiesActivity" />
-        <activity android:name=".Activities.LessonActivitiesActivity" />
-        <activity android:name=".Activities.ActivityActivity" />
-        <activity android:name=".Activities.MainActivity" />
-        <activity android:name=".Activities.MessagesActivity" />
+        <activity android:name=".Activities.MainStuActivity" />
+        <activity android:name=".Activities.MainTeaActivity" />
+        <activity android:name=".Activities.SignUpActivity" />
+        <activity android:name=".Activities.LessonInfoActivity" />
         <activity android:name=".Activities.MylessonsActivity" />
+        <activity android:name=".Activities.MessagesActivity" />
+        <activity android:name=".Activities.QuestionsActivity" />
+        <activity android:name=".Activities.MyActivitiesActivity" />
+        <activity android:name=".Activities.MyDiscussionsActivity" />
+        <activity android:name=".Activities.MyPPTsActivity" />
+        <activity android:name=".Activities.ScoreActivity" />
+        <activity android:name=".Activities.TestActivity" />
+        <activity android:name=".Activities.HelloWorldActivity" />
+        <activity android:name=".Activities.QuestionActivity" />
+        <activity android:name=".Activities.QuestionsOneLessonActivity" />
+        <activity android:name=".Activities.ActivitiesOneLessonActivity" />
+        <activity android:name=".Activities.ActivityActivity" />
         <activity android:name=".Activities.SearchLessonActivity" />
         <activity android:name=".Activities.SearchMessageActivity" />
-        <activity android:name=".Activities.PaperPublishActivity"/>
-        <activity android:name=".Activities.ActivityPublishActivity"/>
+        <activity android:name=".Activities.PaperPublishActivity" />
+        <activity android:name=".Activities.ActivityPublishActivity" />
     </application>
 
 </manifest>

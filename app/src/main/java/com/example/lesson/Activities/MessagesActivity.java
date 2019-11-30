@@ -28,7 +28,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_messages);
+        setContentView(R.layout.my_messages_layout);
 
         bindViews();
 
@@ -64,7 +64,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.mes_myself:
-                Intent intent7 = new Intent(MessagesActivity.this, MainActivity.class);    //跳转设置
+                Intent intent7 = new Intent(MessagesActivity.this, MainStuActivity.class);    //跳转设置
                 startActivity(intent7);
                 break;
             case R.id.mes_mylessons:

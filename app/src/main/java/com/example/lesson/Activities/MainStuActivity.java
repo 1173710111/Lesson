@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.example.lesson.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainStuActivity extends AppCompatActivity implements View.OnClickListener {
 
 /*    private List<Option> mData = null;
     private Context mContext;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main_stu_layout);
 
 
 
@@ -64,39 +64,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ce_lessons:
-                Intent intent1 = new Intent(MainActivity.this, MainActivity.class);    //跳转设置
+                Intent intent1 = new Intent(MainStuActivity.this, LessonInfoActivity.class);    //跳转设置
                 startActivity(intent1);
                 break;
             case R.id.ce_mylessons:
-                Intent intent2 = new Intent(MainActivity.this, MylessonsActivity.class);    //跳转设置
+                Intent intent2 = new Intent(MainStuActivity.this, MylessonsActivity.class);    //跳转设置
                 startActivity(intent2);
                 break;
             case R.id.ce_ppts:
-                Intent intent3 = new Intent(MainActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent3 = new Intent(MainStuActivity.this, MyPPTsActivity.class);    //跳转设置
                 startActivity(intent3);
                 break;
             case R.id.ce_questions:
-                Intent intent4 = new Intent(MainActivity.this, TestActivity.class);
+                Intent intent4 = new Intent(MainStuActivity.this, QuestionsActivity.class);
                 startActivity(intent4);
                 break;
             case R.id.ce_activities:
-                Intent intent5 = new Intent(MainActivity.this, TestActivity.class);
+                Intent intent5 = new Intent(MainStuActivity.this, MyActivitiesActivity.class);
                 startActivity(intent5);
                 break;
             case R.id.ce_mydiscussions:
-                Intent intent6 = new Intent(MainActivity.this, MainActivity.class);
+                Intent intent6 = new Intent(MainStuActivity.this, MyDiscussionsActivity.class);
                 startActivity(intent6);
                 break;
             case R.id.rb_myself:
-                Intent intent7 = new Intent(MainActivity.this, MainActivity.class);    //跳转设置
+                Intent intent7 = new Intent(MainStuActivity.this, MainStuActivity.class);    //跳转设置
                 startActivity(intent7);
                 break;
             case R.id.rb_mylessons:
-                Intent intent8 = new Intent(MainActivity.this, MylessonsActivity.class);    //跳转设置
+                Intent intent8 = new Intent(MainStuActivity.this, MylessonsActivity.class);    //跳转设置
                 startActivity(intent8);
                 break;
             case R.id.rb_messages:
-                Intent intent9 = new Intent(MainActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent9 = new Intent(MainStuActivity.this, MessagesActivity.class);    //跳转设置
                 startActivity(intent9);
                 break;
         }

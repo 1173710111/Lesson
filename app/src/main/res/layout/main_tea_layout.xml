@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/ly_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/bg_topbar">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/div_white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/self_bar"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_below="@id/ly_top_bar">
+            <!--android:background="@color/bg_topbar"-->
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/texas"></ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text="用户名:"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left|center_vertical"
+                        android:text="拉普兰德做得到吗"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="left|center_vertical"
+                        android:text="工号:"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/stu_myself"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:text="123456"
+                        android:textColor="@color/text_topbar"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/stu_settings"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/setting"
+                android:scaleType="fitXY"></Button>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/center_btns"
+            android:layout_width="match_parent"
+            android:layout_height="476dp"
+            android:layout_above="@id/rg_tab_bar"
+            android:layout_below="@+id/self_bar"
+            android:layout_marginTop="13dp">
+
+            <Button
+                android:id="@+id/ce_lessons"
+                style="@style/center_menu_item"
+                android:background="@color/bg_white"
+                android:text="开课"/>
+
+            <Button
+                android:id="@+id/ce_mylessons"
+                style="@style/center_menu_item"
+                android:layout_below="@+id/ce_lessons"
+                android:background="@color/bg_white"
+                android:text="课程" />
+
+            <Button
+                android:id="@+id/ce_ppts"
+                style="@style/center_menu_item"
+                android:layout_below="@+id/ce_mylessons"
+                android:background="@color/bg_white"
+                android:text="课件" />
+
+            <Button
+                android:id="@+id/ce_questions"
+                style="@style/center_menu_item"
+                android:layout_below="@+id/ce_ppts"
+                android:background="@color/bg_white"
+                android:text="考试"/>
+
+            <Button
+                android:id="@+id/ce_activities"
+                style="@style/center_menu_item"
+                android:layout_below="@+id/ce_questions"
+                android:background="@color/bg_white"
+                android:text="活动" />
+
+            <Button
+                android:id="@+id/ce_mydiscussions"
+                style="@style/center_menu_item"
+                android:layout_below="@+id/ce_activities"
+                android:background="@color/bg_white"
+                android:text="讨论" />
+        </RelativeLayout>
+
+
+        <!--<ListView
+            android:id="@+id/list_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />-->
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/rb_myself"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/personal"
+                android:text="@string/tab_menu_myself" />
+
+            <Button
+                android:id="@+id/rb_mylessons"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/plan"
+                android:text="@string/tab_menu_mylessons" />
+
+            <Button
+                android:id="@+id/rb_messages"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/mail"
+                android:text="@string/tab_menu_messages" />
+
+            <!--
+                        <RadioButton
+                            android:id="@+id/rb_stumain"
+                            style="@style/tab_menu_item"
+                            android:text="@string/tab_menu_stumain"/>
+            -->
+
+        </RadioGroup>
+
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@id/rg_tab_bar"
+            android:background="@color/div_white" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ppts_main"
@@ -21,17 +21,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
-    <ImageButton
+    <Button
         android:id="@+id/search"
-        android:layout_width="58dp"
-        android:layout_height="48dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/research"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/my_dis_search"
-        app:layout_constraintTop_toBottomOf="@+id/view3"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
+        app:layout_constraintTop_toBottomOf="@+id/view3"/>
 
     <ListView
         android:id="@+id/my_dis_result"
@@ -47,7 +47,7 @@
         android:id="@+id/view3"
         android:layout_width="409dp"
         android:layout_height="55dp"
-        android:background="#61B8E0"
+        android:background="@color/color3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,8 +60,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="12dp"
-        android:background="#0024CCD1"
-        android:tint="#2C65D6"
+        android:background="@color/color3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -80,6 +79,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
 

@@ -18,7 +18,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(HelloWorldActivity.this,ActivitiesActivity.class);
+                Intent intent=new Intent(HelloWorldActivity.this, MyActivitiesActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(HelloWorldActivity.this,MainActivity.class);
+                Intent intent=new Intent(HelloWorldActivity.this,MainStuActivity.class);
                 startActivity(intent);
             }
         });

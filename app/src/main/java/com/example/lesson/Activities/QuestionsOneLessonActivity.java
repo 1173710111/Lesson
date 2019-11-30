@@ -15,11 +15,11 @@ import com.example.lesson.R;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class LessonActivity extends AppCompatActivity {
+public class QuestionsOneLessonActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.questions_lesson_layout);
+        super.setContentView(R.layout.questions_onelesson_layout);
         TextView lessonName = (TextView) super.findViewById(R.id.LessonName);
         String lesson = getIntent().getStringExtra("lesson");
         lessonName.setText(lesson);
