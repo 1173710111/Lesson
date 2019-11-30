@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/choose_chapter"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:text="课程:"
+                android:textColor="@color/color3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/publish_les_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="65dp"
+                android:text="软件构造"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="40dp"
+                android:text="请选择章节:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/chapter_spinner"
+                android:layout_width="280dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="40dp"
+                android:entries="@array/spingarr"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_question"
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            android:layout_below="@id/choose_chapter"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="添加题目:"
+                android:textColor="@color/button_color3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="题干:"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"/>
+
+            <EditText
+                android:id="@+id/pub_que_title"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textview_border_primary"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:text="@string/hh"/>
+
+            <Button
+                android:id="@+id/pub_que_title_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="330dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/add_color3"/>
+
+            <Button
+                android:id="@+id/pub_que_title_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/delete"/>
+
+            <TextView
+                android:id="@+id/pub_que_title_view"
+                android:layout_width="285dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="选项:"
+                android:textSize="20sp"
+                android:layout_marginTop="220dp"/>
+
+            <EditText
+                android:id="@+id/pub_que_option"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textview_border_primary"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:text="@string/hh"/>
+
+            <Button
+                android:id="@+id/pub_que_option_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="330dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/add_color3"/>
+
+            <Button
+                android:id="@+id/pub_que_option_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/delete"/>
+
+            <TextView
+                android:id="@+id/pub_que_option_view"
+                android:layout_width="285dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="280dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="答案:"
+                android:textSize="20sp"
+                android:layout_marginTop="390dp"/>
+
+            <EditText
+                android:id="@+id/pub_que_answer"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="390dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textview_border_primary"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:text="@string/hh"/>
+
+            <Button
+                android:id="@+id/pub_que_answer_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="390dp"
+                android:layout_marginLeft="330dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/add_color3"/>
+
+            <Button
+                android:id="@+id/pub_que_answer_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/delete"/>
+
+            <TextView
+                android:id="@+id/pub_que_answer_view"
+                android:layout_width="285dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="450dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="时间(min):"
+                android:textSize="20sp"
+                android:layout_marginTop="560dp"/>
+
+            //增减器
+            <LinearLayout
+                android:layout_marginTop="560dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="110dp"
+                android:layout_width="150dp"
+                android:layout_height="25dp">
+                <RelativeLayout
+                    android:onClick="iv_1_que"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/minus_color3" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView_que_time"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="iv_2_que"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/add_color3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pub_que_add"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_color3"
+                android:scaleType="fitXY"
+                android:text="添加"
+                android:layout_marginTop="600dp"
+                android:layout_marginLeft="275dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="660dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="680dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_que_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_question"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="题目列表:"
+            android:textColor="@color/button_color3"
+            android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/button_color3"
+                android:text="查看题目/删除题目"
+                android:id="@+id/show_que_list_btn"
+                android:onClick="showMutilAlertDialog"
+                android:layout_marginTop="45dp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+            //android:onClick="showMutilAlertDialog"
+
+            <Button
+                android:id="@+id/pub_que_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="发布"
+                android:background="@drawable/button_color3"/>
+
+            <Button
+                android:id="@+id/pub_que_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginBottom="15dp"
+                android:text="取消"
+                android:background="@drawable/button_color3"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

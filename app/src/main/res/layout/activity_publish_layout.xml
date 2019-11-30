@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/choose_chapter"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:text="课程:"
+                android:textColor="@color/color3"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/publish_les_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="65dp"
+                android:text="软件构造"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/create_activity"
+            android:layout_width="match_parent"
+            android:layout_height="660dp"
+            android:layout_below="@id/choose_chapter"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="活动信息:"
+                android:textColor="@color/button_color3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="标题:"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"/>
+
+            <EditText
+                android:id="@+id/pub_act_title"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textview_border_primary"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                />
+
+            <Button
+                android:id="@+id/pub_act_title_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="330dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/add_color3"/>
+
+            <Button
+                android:id="@+id/pub_act_title_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/delete"/>
+
+            <TextView
+                android:id="@+id/pub_act_title_view"
+                android:layout_width="285dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:text="截止时间:"
+                android:textSize="20sp"
+                android:layout_marginTop="220dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="日期/时间:"
+                android:textSize="20sp"
+                android:layout_marginTop="255dp"
+                android:layout_marginLeft="45dp"/>
+
+
+            <EditText
+                android:id="@+id/show_activity_datetime"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="290dp"
+                android:editable="false"
+                android:cursorVisible="false"
+                />
+
+            <TextView
+                android:id="@+id/pub_act_date_view"
+                android:layout_width="285dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="320dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="要求:"
+                android:textSize="20sp"
+                android:layout_marginTop="390dp"/>
+
+            //增减器
+            <LinearLayout
+                android:layout_marginTop="560dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="110dp"
+                android:layout_width="150dp"
+                android:layout_height="25dp">
+                <RelativeLayout
+                    android:onClick="iv_1_act"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/minus_color3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView_act_people"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="iv_2_act"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/add_color3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pub_act_request"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="390dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/textview_border_primary"
+                android:singleLine="false"
+                android:inputType="textMultiLine"
+                android:text="@string/hh"/>
+
+            <Button
+                android:id="@+id/pub_act_request_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="390dp"
+                android:layout_marginLeft="330dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/add_color3"/>
+
+            <Button
+                android:id="@+id/pub_act_request_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="520dp"
+                android:background="@drawable/delete"/>
+
+            <TextView
+                android:id="@+id/pub_act_request_view"
+                android:layout_width="285dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="450dp"
+                android:background="@drawable/textview_border_primary"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="队伍人数:"
+                android:textSize="20sp"
+                android:layout_marginTop="560dp"/>
+
+            //增减器
+            <LinearLayout
+                android:layout_marginTop="560dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="110dp"
+                android:layout_width="150dp"
+                android:layout_height="25dp">
+                <RelativeLayout
+                    android:onClick="iv_1_que"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/minus_color3" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/textView_que_time"
+                        android:paddingTop="1dp"
+                        android:paddingBottom="1dp"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:onClick="iv_2_que"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/add_color3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="600dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="620dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_act_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_activity"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:text="文件列表:"
+                android:textColor="@color/button_color3"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/show_file_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/button_color3"
+                android:text="选择文件"
+                android:onClick="showMutilAlertDialog"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="60dp"
+                />
+
+            <Button
+                android:id="@+id/show_file_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/button_color3"
+                android:text="删除文件"
+                android:onClick="showMutilAlertDialog_delete"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="230dp"/>
+                "/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/line_color3" />
+            //android:onClick="showMutilAlertDialog"
+
+            <Button
+                android:id="@+id/pub_que_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="15dp"
+                android:text="发布"
+                android:background="@drawable/button_color3"/>
+
+            <Button
+                android:id="@+id/pub_que_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginBottom="15dp"
+                android:text="取消"
+                android:background="@drawable/button_color3"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

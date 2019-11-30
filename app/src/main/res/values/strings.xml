@@ -1,27 +1,17 @@
 <?xml version="1.0"?>
 
     <resources>
-
     <string name="app_name">LessonSystem</string>
-
     <string name="tab_menu_myself">个人中心</string>
-
     <string name="tab_menu_mylessons">课程</string>
-
     <string name="tab_menu_messages">消息</string>
-
     <string name="tab_menu_stumain">主页</string>
-
     <string name="center_menu_lessons">选课</string>
-
     <string name="center_menu_mylessons">课程</string>
-
     <string name="center_menu_ppts">课件</string>
-
     <string name="center_menu_questions">习题</string>
-
     <string name="center_menu_activities">活动</string>
-
     <string name="center_menu_mydiscussions">讨论</string>
-
+    <string name="hh">请输入内容</string>
+    <array name="spingarr">一脸懵逼,二脸懵逼</array>
 </resources>

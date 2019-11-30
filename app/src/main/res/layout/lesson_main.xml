@@ -175,6 +175,20 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp">
     </ImageView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:backgroundTint="#95CACA"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="#95CACA"
+        app:srcCompat="@android:drawable/ic_input_add" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -186,4 +200,5 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="15dp">
     </ImageView>
+
 </android.support.constraint.ConstraintLayout>

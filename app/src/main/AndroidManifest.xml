@@ -27,6 +27,8 @@
         <activity android:name=".Activities.MylessonsActivity" />
         <activity android:name=".Activities.SearchLessonActivity" />
         <activity android:name=".Activities.SearchMessageActivity" />
+        <activity android:name=".Activities.PaperPublishActivity"/>
+        <activity android:name=".Activities.ActivityPublishActivity"/>
     </application>
 
 </manifest>

@@ -46,16 +46,25 @@
         android:layout_marginTop="10dp"
         android:text="main"
         tools:ignore="MissingConstraints"
-        tools:text="lessonInfo" />
+        tools:text="main" />
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
-        android:text="mes"
+        android:text="paperpublish"
         tools:ignore="MissingConstraints"
-        tools:text="lessonInfo" />
+        tools:text="paperpublish" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="activitypublish"
+        tools:ignore="MissingConstraints"
+        tools:text="activitypublish" />
 </LinearLayout>
 
 
