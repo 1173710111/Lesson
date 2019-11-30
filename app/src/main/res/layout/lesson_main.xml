@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/title2"
+        android:layout_width="400dp"
+        android:layout_height="105dp"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/name1"
+        android:layout_width="412dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/color2"
+        app:layout_constraintBottom_toTopOf="@+id/title2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/course_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toStartOf="@+id/course_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title2" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="进度"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice" />
+
+    <TextView
+        android:id="@+id/course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="课程名"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/course_icon"
+        app:layout_constraintTop_toTopOf="@+id/title2" />
+
+    <ListView
+        android:id="@+id/videos"
+        android:layout_width="412dp"
+        android:layout_height="394dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/course_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/textview_border_blue"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="正在进行"
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="@+id/title2"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toEndOf="@+id/course_name"
+        app:layout_constraintTop_toTopOf="@+id/title2" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <View
+        android:id="@+id/choice"
+        android:layout_width="412dp"
+        android:layout_height="58dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <Button
+        android:id="@+id/huodong"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="活动"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/choice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toEndOf="@+id/taolun"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/taolun"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="讨论"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/choice"
+        app:layout_constraintStart_toEndOf="@+id/xiti"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/xiti"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:text="习题"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/choice"
+        app:layout_constraintStart_toEndOf="@+id/chengyuan"
+        app:layout_constraintTop_toBottomOf="@+id/title2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/chengyuan"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:text="成员"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/choice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/choice" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="@+id/title2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp">
+    </ImageView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/line"
+        app:layout_constraintBottom_toBottomOf="@+id/choice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="15dp">
+    </ImageView>
+</android.support.constraint.ConstraintLayout>

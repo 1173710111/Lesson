@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="35dp"
+    android:layout_height="35dp">
+
+    <Button
+        android:id="@+id/question"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_columnSpan="1"
+        android:gravity="center"
+        android:background="@color/color1"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>

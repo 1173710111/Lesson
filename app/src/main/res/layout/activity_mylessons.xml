@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MylessonsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="58dp">
+
+
+        <RelativeLayout
+            android:id="@+id/les_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_topbar">
+
+            <TextView
+                android:id="@+id/txt_topbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="已选课程"
+                android:textColor="@color/text_topbar"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/div_white" />
+
+        </RelativeLayout>
+
+
+        <RadioGroup
+            android:id="@+id/search_lesson_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/les_btn_ing"
+                style="@style/les_menu_item"
+                android:layout_width="137dp"
+                android:text="正在进行" />
+
+            <Button
+                android:id="@+id/les_btn_fin"
+                style="@style/les_menu_item"
+                android:layout_width="137dp"
+                android:text="已结束" />
+
+            <Button
+                android:id="@+id/les_btn_sea"
+                style="@style/les_menu_item"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="27dp"
+                android:background="@drawable/research" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/list_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="571dp"
+            android:layout_below="@+id/search_lesson_bar"
+            ></ListView>
+
+        <RadioGroup
+            android:id="@+id/les_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/les_myself"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/personal"
+                android:text="@string/tab_menu_myself" />
+
+            <Button
+                android:id="@+id/les_mylessons"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/plan"
+                android:text="@string/tab_menu_mylessons" />
+
+            <Button
+                android:id="@+id/les_messages"
+                style="@style/tab_menu_item"
+                android:drawableTop="@drawable/mail"
+                android:text="@string/tab_menu_messages" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_above="@id/les_tab_bar"
+            android:background="@color/div_white" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

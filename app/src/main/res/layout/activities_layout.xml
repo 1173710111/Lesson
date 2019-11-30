@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">　　
+
+
+        <TextView
+            android:id="@+id/SubLessonNameInQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_columnSpan="3"
+            android:gravity="left|center_vertical"
+            android:background="@color/color2"
+            android:text="   我参与的活动"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/allActivities"
+            android:layout_width="126dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:background="@android:color/transparent"
+            android:text="全部"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ingActivities"
+            android:layout_width="151dp"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:background="@android:color/transparent"
+            android:text="正在进行"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/finishedActivities"
+            android:layout_width="133dp"
+            android:layout_row="1"
+            android:layout_columnSpan="1"
+            android:background="@android:color/transparent"
+            android:text="已结束"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="641dp"
+            android:layout_columnSpan="3"
+            android:layout_weight="1"
+            android:background="@color/color3"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/acitvities"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_columnSpan="3" />
+        </RelativeLayout>
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>

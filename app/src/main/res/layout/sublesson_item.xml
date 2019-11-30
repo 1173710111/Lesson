@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        tools:ignore="MissingConstraints">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">　
+
+        <TextView
+            android:id="@+id/SubLessonNumber"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_columnSpan="1"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:background="@drawable/textview_border_primary"
+            android:textColor="@color/colorPrimary"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/SubLessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_columnSpan="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text=""
+             />
+
+        <TextView
+            android:id="@+id/SubLessonDate"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="30dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_columnSpan="2"
+            android:descendantFocusability="blocksDescendants">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/questions"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:columnCount="6"
+            android:orientation="horizontal"
+            android:layout_columnSpan="2"
+            />
+        </RelativeLayout>
+    </GridLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

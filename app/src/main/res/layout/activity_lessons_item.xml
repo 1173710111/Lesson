@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">　
+
+        <TextView
+            android:id="@+id/LessonName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            tools:ignore="MissingConstraints">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/activityType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_columnSpan="1"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/textview_border_primary"
+                    android:gravity="center"
+                    android:text=""
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:textColor="@color/colorPrimary" /> />
+
+                <TextView
+                    android:id="@+id/activityTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_columnSpan="1"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/activityDDL"
+                    android:layout_width="300dp"
+                    android:layout_height="25dp"
+                    android:layout_columnSpan="2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#99F44336" />
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+</android.support.constraint.ConstraintLayout>
