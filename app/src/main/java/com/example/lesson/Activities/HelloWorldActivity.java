@@ -26,7 +26,7 @@ public class HelloWorldActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(HelloWorldActivity.this,QuestionsActivity.class);
+                Intent intent=new Intent(HelloWorldActivity.this, MyQuestionsActivity.class);
                 startActivity(intent);
             }
         });

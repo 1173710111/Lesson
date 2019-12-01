@@ -10,13 +10,13 @@ import android.widget.TextView;
 import com.example.lesson.R;
 
 
-public class MesActivity extends AppCompatActivity {
+public class MessageActivity extends AppCompatActivity {
 
     private Button button_back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mes);
+        setContentView(R.layout.message_layout);
 
         Button button_back = (Button)findViewById(R.id.btn_back);
         button_back.setOnClickListener(new View.OnClickListener() {

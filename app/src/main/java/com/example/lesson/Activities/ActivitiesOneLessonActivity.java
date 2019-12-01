@@ -34,7 +34,7 @@ public class ActivitiesOneLessonActivity extends AppCompatActivity {
     private void test(Lesson lesson1){
         Activity activity1=new Activity(1,"homework","完成Lab1");
         Activity activity2=new Activity(2,"homework","完成Lab2");
-        Activity activity3=new Activity(1,"discussion","正则表达式的用法");
+        Activity activity3=new Activity(1,"discuss","正则表达式的用法");
         long ms = System.currentTimeMillis();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String date = dateFormat.format(new Date(ms));

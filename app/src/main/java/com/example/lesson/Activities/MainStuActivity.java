@@ -64,7 +64,7 @@ public class MainStuActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ce_lessons:
-                Intent intent1 = new Intent(MainStuActivity.this, LessonInfoActivity.class);    //跳转设置
+                Intent intent1 = new Intent(MainStuActivity.this, LessonsActivity.class);    //跳转设置
                 startActivity(intent1);
                 break;
             case R.id.ce_mylessons:
@@ -76,7 +76,7 @@ public class MainStuActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent3);
                 break;
             case R.id.ce_questions:
-                Intent intent4 = new Intent(MainStuActivity.this, QuestionsActivity.class);
+                Intent intent4 = new Intent(MainStuActivity.this, MyQuestionsActivity.class);
                 startActivity(intent4);
                 break;
             case R.id.ce_activities:
@@ -96,7 +96,7 @@ public class MainStuActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent8);
                 break;
             case R.id.rb_messages:
-                Intent intent9 = new Intent(MainStuActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent9 = new Intent(MainStuActivity.this, MyMessagesActivity.class);    //跳转设置
                 startActivity(intent9);
                 break;
         }

@@ -17,7 +17,7 @@ import com.example.lesson.R;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MessagesActivity extends AppCompatActivity implements View.OnClickListener {
+public class MyMessagesActivity extends AppCompatActivity implements View.OnClickListener {
 
     public List<Message> messages = new LinkedList<Message>();
 
@@ -32,7 +32,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
 
         bindViews();
 
-        mContext = MessagesActivity.this;
+        mContext = MyMessagesActivity.this;
         createMessages();
         mAdapter = new MessageAdapter((LinkedList<Message>) messages, mContext);
         list_message.setAdapter(mAdapter);
@@ -47,7 +47,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
                 //传数据
                 intent.putExtra("addresser",addresser);
                 intent.putExtra("message",message);
-                intent.setClass(MessagesActivity.this,MesActivity.class);
+                intent.setClass(MyMessagesActivity.this, MessageActivity.class);
                 startActivity(intent);
             }
         });
@@ -64,15 +64,15 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.mes_myself:
-                Intent intent7 = new Intent(MessagesActivity.this, MainStuActivity.class);    //跳转设置
+                Intent intent7 = new Intent(MyMessagesActivity.this, MainStuActivity.class);    //跳转设置
                 startActivity(intent7);
                 break;
             case R.id.mes_mylessons:
-                Intent intent8 = new Intent(MessagesActivity.this, MylessonsActivity.class);    //跳转设置
+                Intent intent8 = new Intent(MyMessagesActivity.this, MylessonsActivity.class);    //跳转设置
                 startActivity(intent8);
                 break;
             case R.id.mes_messages:
-                Intent intent9 = new Intent(MessagesActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent9 = new Intent(MyMessagesActivity.this, MyMessagesActivity.class);    //跳转设置
                 startActivity(intent9);
                 break;
             case R.id.mes_btn_sys:
@@ -83,7 +83,7 @@ public class MessagesActivity extends AppCompatActivity implements View.OnClickL
                 //notifyDataSetChanged();
                 break;
             case R.id.mes_btn_sea:
-                Intent intent6 = new Intent(MessagesActivity.this, SearchMessageActivity.class);    //跳转设置
+                Intent intent6 = new Intent(MyMessagesActivity.this, SearchMessageActivity.class);    //跳转设置
                 startActivity(intent6);
                 break;
         }

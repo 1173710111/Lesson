@@ -70,7 +70,7 @@ public class MylessonsActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intent8);
                 break;
             case R.id.les_messages:
-                Intent intent9 = new Intent(MylessonsActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent9 = new Intent(MylessonsActivity.this, MyMessagesActivity.class);    //跳转设置
                 startActivity(intent9);
                 break;
             case R.id.les_btn_ing:

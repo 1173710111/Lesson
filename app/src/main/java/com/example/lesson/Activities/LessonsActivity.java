@@ -5,14 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.lesson.R;
 
-public class SearchLessonActivity extends AppCompatActivity {
+public class LessonsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.search_lesson_layout);
-
-
+        setContentView(R.layout.lessons_layout);
     }
-
 }

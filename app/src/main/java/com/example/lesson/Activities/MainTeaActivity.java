@@ -64,7 +64,7 @@ public class MainTeaActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ce_lessons:
-                Intent intent1 = new Intent(MainTeaActivity.this, MainTeaActivity.class);    //跳转设置
+                Intent intent1 = new Intent(MainTeaActivity.this, TestActivity.class);    //跳转设置
                 startActivity(intent1);
                 break;
             case R.id.ce_mylessons:
@@ -72,7 +72,7 @@ public class MainTeaActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent2);
                 break;
             case R.id.ce_ppts:
-                Intent intent3 = new Intent(MainTeaActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent3 = new Intent(MainTeaActivity.this, MyMessagesActivity.class);    //跳转设置
                 startActivity(intent3);
                 break;
             case R.id.ce_questions:
@@ -96,7 +96,7 @@ public class MainTeaActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent8);
                 break;
             case R.id.rb_messages:
-                Intent intent9 = new Intent(MainTeaActivity.this, MessagesActivity.class);    //跳转设置
+                Intent intent9 = new Intent(MainTeaActivity.this, MyMessagesActivity.class);    //跳转设置
                 startActivity(intent9);
                 break;
         }

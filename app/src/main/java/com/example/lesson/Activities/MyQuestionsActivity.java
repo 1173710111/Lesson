@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class QuestionsActivity extends AppCompatActivity implements View.OnClickListener {
+public class MyQuestionsActivity extends AppCompatActivity implements View.OnClickListener {
 
     public List<Lesson> lessons=new ArrayList<Lesson>();
     private void createLessons(){
@@ -57,7 +57,7 @@ public class QuestionsActivity extends AppCompatActivity implements View.OnClick
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         RecyclerView recyclerView=findViewById(R.id.Questions);
         recyclerView.setLayoutManager(layoutManager);
-        LessonAdapter_OneSub adapter = new LessonAdapter_OneSub(lessons,QuestionsActivity.this);
+        LessonAdapter_OneSub adapter = new LessonAdapter_OneSub(lessons, MyQuestionsActivity.this);
         recyclerView.setAdapter(adapter);
     }
 

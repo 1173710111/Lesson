@@ -69,7 +69,7 @@ public class ActivityLessonsAdapter extends RecyclerView.Adapter<ActivityLessons
             case "homework":
                 type+="作业";
                 break;
-            case "discussion":
+            case "discuss":
                 type+="课堂讨论";
                 break;
                 default:
