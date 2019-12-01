@@ -1,0 +1,45 @@
+标题背景色：color2
+CardView：
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    tools:ignore="MissingConstraints">
+
+返回：
+ 
+<ImageButton
+    android:id="@+id/dis_back"
+    android:layout_width="46dp"
+    android:layout_height="36dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="12dp"
+    android:background="#0024CCD1"
+    android:tint="#2C65D6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="?attr/actionModeCloseDrawable" />
+
+左右边距：
+padding 15dp
+TextView居中：
+gravity:left|center_vertical
+
+标题字号：
+24sp
+
+分割线：
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/line"
+    tools:ignore="MissingConstraints"></ImageView>

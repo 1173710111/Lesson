@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.LessonsActivity"></activity>
+        <activity android:name=".Activities.ScoreOnequestionActivity"></activity>
+        <activity android:name=".Activities.DiscussionActivity" />
+        <activity android:name=".Activities.LessonsActivity" />
         <activity android:name=".Activities.LessonMainActivity" />
-        <activity android:name=".Activities.SearchMesActivity" />
         <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +40,7 @@
         <activity android:name=".Activities.SearchMessageActivity" />
         <activity android:name=".Activities.PaperPublishActivity" />
         <activity android:name=".Activities.ActivityPublishActivity" />
+        <activity android:name=".Activities.MessageActivity" />
     </application>
 
 </manifest>

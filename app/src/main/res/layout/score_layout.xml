@@ -1,219 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
-
+    android:layout_height="wrap_content">
     <GridLayout
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:columnCount="3"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
         android:orientation="horizontal"
-        android:rowCount="6"
-        tools:ignore="MissingConstraints">
-
-
-        <TextView
-            android:id="@+id/SubLessonNameInQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:layout_columnSpan="3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:text=""
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        android:rowCount="2"
+        tools:ignore="MissingConstraints">　
 
         <TextView
-            android:id="@+id/SubLessonDateInQuestion"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_columnSpan="3"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:textSize="18sp" />
-
-        <RelativeLayout
+            android:id="@+id/LessonName"
             android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_height="40dp"
-            android:layout_columnSpan="3"
-            android:background="@android:color/transparent"
-            android:descendantFocusability="blocksDescendants">
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/Questions"
-                android:layout_width="350dp"
-                android:layout_height="35dp"
-                android:layout_columnSpan="3" />
-        </RelativeLayout>
-
-        <TextView
-            android:id="@+id/QuestionNumber"
-            android:layout_width="80dp"
-            android:layout_height="35dp"
             android:layout_columnSpan="1"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_gravity="left"
-            android:text=""
-            tools:ignore="GridLayout" />
+            android:layout_marginLeft="10dp"
+            android:gravity="start|center_vertical"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <RelativeLayout
-            android:id="@+id/questionItem"
-            android:layout_width="375dp"
-            android:layout_height="288dp"
-            android:layout_columnSpan="3"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/question_border">
-        </RelativeLayout>
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_columnSpan="2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:gravity="right"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="190dp"
-                android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_columnSpan="1"
+            android:descendantFocusability="blocksDescendants">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/subLessons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_columnSpan="1"
-                android:orientation="vertical"
-                android:gravity="left">
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_columnSpan="1"
-                    android:background="@drawable/button"
-                    android:text="查看答案"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_columnSpan="2"
-                android:gravity="right"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="35dp"
-                    android:layout_row="1"
-                    android:layout_columnSpan="2"
-                    android:background="@drawable/button"
-                    android:text="查看解析"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:gravity="left"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="145dp"
-                android:layout_height="30dp"
-                android:text="答对的学生数："
-                android:textSize="18dp">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="24"
-                android:textColor="@color/colorBlue"
-                android:textSize="18sp"
-                android:textStyle="bold">
-
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:gravity="left"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="145dp"
-                android:layout_height="30dp"
-                android:text="答错的学生数："
-                android:textSize="18dp"></TextView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="12"
-                android:textColor="@color/colorWrong"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_columnSpan="2"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:gravity="left"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="145dp"
-                android:layout_height="30dp"
-                android:text="未答题的学生数："
-                android:textSize="18dp">
-            </TextView>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:text="2"
-                android:textColor="@color/colorUnfinished"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
-        </LinearLayout>
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/background_light"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="41dp" />
+        </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:layout_columnSpan="2">
-            <com.github.mikephil.charting.charts.PieChart
+            android:layout_columnSpan="1">
+            <com.github.mikephil.charting.charts.LineChart
                 android:id="@+id/pieChart"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="50dp"
                 android:foregroundGravity="center"
                 android:layout_centerHorizontal="true">
-            </com.github.mikephil.charting.charts.PieChart>
+            </com.github.mikephil.charting.charts.LineChart>
         </RelativeLayout>
     </GridLayout>
-
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

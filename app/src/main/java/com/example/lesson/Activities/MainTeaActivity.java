@@ -84,7 +84,7 @@ public class MainTeaActivity extends AppCompatActivity implements View.OnClickLi
                 startActivity(intent5);
                 break;
             case R.id.ce_mydiscussions:
-                Intent intent6 = new Intent(MainTeaActivity.this, MainTeaActivity.class);
+                Intent intent6 = new Intent(MainTeaActivity.this, DiscussionActivity.class);
                 startActivity(intent6);
                 break;
             case R.id.rb_myself:
